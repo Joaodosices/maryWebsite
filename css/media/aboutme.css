@@ -1,0 +1,90 @@
+/* 
+-----------------------------
+---Default values MAX SIZES--
+-----------------------------
+
+.section--aboutme--img, .aboutme--info{
+    width: 50%;
+}
+  .section--aboutme{
+      display: flex;
+      flex-direction: row;
+      height: 45.7rem;
+      overflow: hidden;
+  }
+  .section--aboutme--img{
+      overflow: hidden;
+  }
+  .section--aboutme img{
+      position: relative;
+      transform: scale(160%);
+      left: 15rem;
+      top: 3rem;
+  }
+  .aboutme--info{
+      display: flex;
+      flex-direction: column;
+  }
+  .aboutme--info h1{
+      padding-top: 3rem;
+  } */
+  @media (max-width: 1681px){
+    .section--aboutme img{
+        left: 10rem;
+        transform: scale(140%);
+    }
+}
+@media (max-width: 1459px){
+    .section--aboutme img{
+        left: 6rem;
+        transform: scale(120%);
+    }
+}
+@media (max-width: 1271px){
+    .section--aboutme--img{
+        display: none;
+    }
+    .aboutme--info{
+        width: 100%;
+    }
+    .aboutme--info{
+        text-align: center;
+    }
+    .aboutme--info h1{
+        padding-top: 3rem;
+    } 
+    .section--aboutme{
+        display: flex;
+        flex-direction: row;
+        height: 40rem;
+        overflow: hidden;
+    }
+}
+@media (max-width: 633px){
+    .aboutme--info{
+        text-align: justify;
+    }
+    .aboutme--info p{
+        max-width: 45ch;
+    }
+    .aboutme--info h1,.aboutme--info p {
+        margin-left: 3rem;
+    } 
+}
+@media (max-width: 547px){
+    .aboutme--info h1{
+        padding-top: 1.5rem;
+    } 
+    .aboutme--info h1,.aboutme--info p {
+        margin-left: 0rem;
+        text-align: center;
+    } 
+    .aboutme--info p {
+        padding: 10%;
+    }
+}
+@media (max-width: 213px){
+    .aboutme--info h1{
+        padding-top: 0rem;
+    } 
+}

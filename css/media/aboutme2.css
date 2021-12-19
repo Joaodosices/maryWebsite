@@ -1,0 +1,91 @@
+/*
+-----------------------------
+---Default values MAX SIZES--
+----------------------------
+
+.section--aboutme2{
+    display: flex;
+    flex-direction: column;
+}
+.section--aboutme2 img{
+  width: 30rem;
+  height: 30rem;
+  transition: 500ms ease-in;
+}
+.section--aboutme2 img:hover{
+  box-shadow: var(--secundaryColor) 1rem 1rem;
+}
+.aboutme2--row1, .aboutme2--row2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 7rem;
+}
+.aboutme2--row1 p{
+  padding-right: 2rem;
+  line-height: 2.4rem;
+}
+.aboutme2--row2 p{
+  padding-left: 7rem;
+  line-height: 2.4rem;
+}
+.row__img, .row__info{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.row__info p {
+  align-self: center;
+  font-size: 2rem;
+}
+.aboutme2--row2{
+    margin-bottom: 6rem;
+} */
+@media (max-width: 1047px){
+    .aboutme2--row1, .aboutme2--row2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .row__img, .row__info{
+        display: flex;
+        width: 100%;
+    }
+      #change{
+          display: none;
+      }
+      #row__info_mobile {
+          display: flex;
+      }
+
+      .aboutme2--row1 p, .aboutme2--row2 p{
+        text-align: center;
+        max-width: 35ch;
+        padding: 5%;
+      }
+      
+      .aboutme2--row2 p{
+        padding-left: 5rem;
+      }
+      .aboutme2--row2 p{
+          padding: 5%;
+      }
+}
+@media (max-width: 586px){
+  .section--aboutme2 img{
+    width: 17rem;
+    height: 17rem;
+  }
+}
+@media (max-width: 304px){
+  .section--aboutme2 img{
+    width: 12rem;
+    height: 12rem;
+  }
+}
+@media (max-width: 192px){
+  .section--aboutme2 img{
+    width: 100%;
+    height: calc(12rem);
+  }
+}

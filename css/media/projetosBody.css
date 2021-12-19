@@ -1,0 +1,98 @@
+  /* ============
+  ===Projetos===
+  =====body=====
+  ==============
+
+  .projetosContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+
+    img{
+      width: 30rem;
+      height: 30rem;
+  }
+}
+.displayProjeto{
+    display: flex;
+    left: 0;
+    width: 30rem;
+    height: 30rem;   
+    
+    h4{
+      font-size: 2.6rem;
+  }
+    p{
+      font-size: 2rem;
+  }
+  }
+.displayProjeto__hover{
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    text-align: center;
+    background: transparent;
+    transition: 600ms ease-out;
+    
+    h4,
+    p{
+      color: transparent;
+      transition: 600ms ease-out;
+      }
+  }
+  
+  .displayProjeto:hover > .displayProjeto__hover h4{
+      color: var(--primaryColor);
+  }
+  .displayProjeto:hover > .displayProjeto__hover p{
+      color: var(--primaryColor);
+  }
+  .displayProjeto:hover > .displayProjeto__hover{
+    background: rgba(0, 0, 0, 0.671);
+  } */
+
+  @media (max-width: 1510px){
+    .projetosContent img{
+      width: 20rem;
+      height: 20rem;
+    }
+    .displayProjeto{
+      width: 20rem;
+      height: 20rem;
+    }
+    .displayProjeto h4{      
+          font-size: 2rem;
+      }
+    .displayProjeto p{
+          font-size: 1.5rem;
+      }
+    .displayProjeto__hover{
+        width: 20rem;
+        height: 20rem; 
+    }
+  }
+  @media (max-width: 1060px){
+    .projetosContent{
+        flex-wrap: wrap;
+    }
+    .projetosContent img{
+      width: 17rem;
+      height: 17rem;
+    }
+    .displayProjeto{
+      width: 17rem;
+      height: 17rem;
+      margin-top: 1rem;
+    }
+    .displayProjeto h4{      
+          font-size: 1.8rem;
+      }
+    .displayProjeto p{
+          font-size: 1.3rem;
+      }
+    .displayProjeto__hover{
+        width: 17rem;
+        height: 17rem; 
+    }
+  }

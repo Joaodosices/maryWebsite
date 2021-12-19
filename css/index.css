@@ -1,0 +1,448 @@
+/*===================
+  ===CSS variables===
+  ===================*/
+:root {
+  --primaryColor: #e8b838;
+  --secundaryColor: #855ae5;
+  --hoverColor: #40169c;
+  --fontTitle: "Merienda", serif;
+  --fontText: "Merienda", serif;
+  --button--font--size: 1.3rem;
+  --titleh1--font--size: 6rem;
+  --titleh3--font--size: 2.6rem;
+}
+@media (max-width: 948px) {
+  :root {
+    --titleh1--font--size: 5rem;
+  }
+}
+@media (max-width: 452px) {
+  :root {
+    --titleh1--font--size: 4rem;
+    --titleh3--font--size: 2rem;
+  }
+}
+
+/*==================
+  ====Tipografia====
+  ==================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fontTitle);
+  font-weight: 700;
+  color: white;
+}
+
+.section--projects h1,
+.section--projects h4,
+.section--projects p,
+.section--projects button {
+  color: var(--primaryColor);
+}
+
+p,
+button,
+input,
+textarea {
+  font-family: var(--fontText);
+  font-weight: 400;
+  color: white;
+}
+
+header p {
+  color: white;
+}
+
+.landing--info h1,
+.aboutme--info h1,
+.projetosHeader h1 {
+  font-size: var(--titleh1--font--size);
+}
+
+.landing--info h3 {
+  font-size: var(--titleh3--font--size);
+}
+
+span {
+  color: var(--secundaryColor);
+}
+
+/*===============
+  ====Styling====
+  ===============*/
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+  background: var(--primaryColor);
+}
+
+.section--aboutme,
+.section--projects {
+  background: var(--secundaryColor);
+}
+
+/*==============
+  ====header====
+  ==============*/
+header {
+  height: 5rem;
+}
+header div {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 3rem;
+  background: var(--secundaryColor);
+  top: 4rem;
+  left: 10rem;
+  transition: 400ms;
+}
+header div:hover {
+  background: var(--hoverColor);
+  cursor: pointer;
+}
+header img {
+  max-width: 2rem;
+  max-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+header p {
+  padding-right: 0.5rem;
+}
+
+/*====================
+  ====landing view====
+  ====================*/
+.section--landing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 50rem;
+  width: 100%;
+}
+.section--landing img {
+  position: absolute;
+  z-index: -10;
+  right: 15rem;
+  bottom: 12rem;
+  transform: scale(200%);
+}
+
+.landing--info {
+  margin-left: 10rem;
+}
+.landing--info h1 {
+  margin-bottom: 2rem;
+}
+.landing--info h3 {
+  margin-top: 1rem;
+}
+.landing--info input {
+  background: var(--secundaryColor);
+  border: 0;
+  padding: 1.5rem 6rem 1.5rem 6rem;
+  font-size: var(--button--font--size);
+  color: white;
+  margin-top: 6rem;
+  margin-left: 5rem;
+  transition: 600ms ease;
+}
+.landing--info input:hover {
+  background: var(--hoverColor);
+  cursor: pointer;
+}
+
+/*================
+  ====about me====
+  ================*/
+.section--aboutme--img,
+.aboutme--info {
+  width: 50%;
+}
+
+.section--aboutme {
+  display: flex;
+  flex-direction: row;
+  height: 45.7rem;
+  overflow: hidden;
+}
+
+.section--aboutme--img {
+  overflow: hidden;
+}
+
+.section--aboutme img {
+  position: relative;
+  transform: scale(160%);
+  left: 15rem;
+  top: 3rem;
+}
+
+.aboutme--info {
+  display: flex;
+  flex-direction: column;
+}
+.aboutme--info h1 {
+  padding-top: 3rem;
+}
+
+/*==================
+  ====about me 2====
+  ==================*/
+.section--aboutme2 {
+  display: flex;
+  flex-direction: column;
+}
+.section--aboutme2 img {
+  width: 30rem;
+  height: 30rem;
+  transition: 500ms ease-in;
+}
+.section--aboutme2 img:hover {
+  box-shadow: var(--secundaryColor) 1rem 1rem;
+}
+
+.aboutme2--row1,
+.aboutme2--row2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.aboutme2--row1 p {
+  padding-right: 2rem;
+  line-height: 2.4rem;
+}
+
+.aboutme2--row2 {
+  margin-bottom: 6rem;
+}
+.aboutme2--row2 p {
+  padding-left: 7rem;
+  line-height: 2.4rem;
+}
+
+.row__img,
+.row__info {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.row__info p {
+  align-self: center;
+  font-size: 2rem;
+}
+
+#row__info_mobile {
+  display: none;
+}
+
+/*==============
+====Projetos====
+=====Header=====
+================*/
+.section--projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projetosHeader {
+  background: #6e39e5;
+  width: 50rem;
+  margin: 6rem auto;
+  transition: 500ms ease-in;
+}
+.projetosHeader:hover {
+  box-shadow: var(--primaryColor) 1rem 1rem;
+}
+.projetosHeader h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+.projetosHeader ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin-right: 2.5rem;
+}
+.projetosHeader button {
+  border: 0;
+  padding: 0.2em 1em 0.2em 1em;
+  background: var(--secundaryColor);
+  border-radius: 0.4rem;
+  transition: 400ms ease-in-out;
+}
+.projetosHeader button:hover {
+  cursor: pointer;
+  background: var(--primaryColor);
+  color: var(--secundaryColor);
+}
+
+/*============
+===Projetos===
+=====body=====
+==============*/
+.projetosContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+.projetosContent img {
+  width: 30rem;
+  height: 30rem;
+}
+
+.displayProjeto {
+  display: flex;
+  left: 0;
+  width: 30rem;
+  height: 30rem;
+}
+.displayProjeto h4 {
+  font-size: 2.6rem;
+}
+.displayProjeto p {
+  font-size: 2rem;
+}
+
+.displayProjeto__hover {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  text-align: center;
+  background: transparent;
+  transition: 600ms ease-out;
+}
+.displayProjeto__hover h4,
+.displayProjeto__hover p {
+  color: transparent;
+  transition: 600ms ease-out;
+}
+
+.displayProjeto:hover > .displayProjeto__hover h4 {
+  color: var(--primaryColor);
+}
+
+.displayProjeto:hover > .displayProjeto__hover p {
+  color: var(--primaryColor);
+}
+
+.displayProjeto:hover > .displayProjeto__hover {
+  background: rgba(0, 0, 0, 0.671);
+}
+
+/*============
+  ===footer===
+  ============*/
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer--content,
+.footer--rodape {
+  width: 50%;
+}
+
+.footer--content {
+  padding-left: 4rem;
+  padding-right: 0rem;
+  position: relative;
+}
+.footer--content h1,
+.footer--content p {
+  width: 50ch;
+  color: var(--secundaryColor);
+}
+.footer--content h1 {
+  font-size: 4.6rem;
+}
+.footer--content p {
+  font-size: 1.3rem;
+}
+
+.footer--rodape {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  align-content: flex-end;
+  margin-bottom: 1rem;
+}
+.footer--rodape h2 {
+  color: var(--secundaryColor);
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.socialsArea {
+  display: flex;
+  flex-direction: row;
+}
+.socialsArea img {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  margin-left: 1.5rem;
+  margin-top: 1.3rem;
+}
+
+.footer--mail--submit {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12.6rem;
+  padding-right: 0rem;
+}
+
+.nomeMail,
+.adressMail {
+  width: 44rem;
+  height: 3.3rem;
+  color: black;
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.msgMail {
+  width: 50rem;
+  height: 17.7rem;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.submitMail {
+  background: var(--secundaryColor);
+  border: 0;
+  padding: 1.6em 5.3em 1.6em 5.3em;
+  font-size: var(--button--font--size);
+  color: var(--primaryColor);
+  margin-top: 1.3rem;
+  transition: 600ms ease;
+  margin-bottom: 2.6rem;
+}
+.submitMail:hover {
+  background: var(--hoverColor);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */

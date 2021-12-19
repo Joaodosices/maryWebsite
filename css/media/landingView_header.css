@@ -1,0 +1,273 @@
+/* 
+-----------------------------
+---Default values MAX SIZES--
+----------------------------
+
+header {
+    height: 5rem;
+}
+header div{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 3rem;
+  background: var(--secundaryColor);
+  top: 4rem;
+  left: 10rem;
+  transition: 400ms;
+}
+header div:hover {
+  background: var(--hoverColor);
+  cursor: pointer;
+}
+header img{
+  max-width: 2rem;
+  max-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+header p{
+  padding-right: 0.5rem;
+}
+
+====================
+====landing view====
+====================
+
+.section--landing{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    width: 100%;
+}
+.section--landing img{
+    position: absolute;
+    z-index: -10;
+    right: 15rem;
+    bottom: 12rem;
+    transform: scale(200%);
+}
+.landing--info{
+    margin-left: 10rem;
+}
+.landing--info h1{
+    margin-bottom: 2rem;
+}
+.landing--info h3{
+    margin-top: 1rem;
+}
+.landing--info input{
+    background: var(--secundaryColor);
+    border: 0;
+    padding: 1.5rem 6rem 1.5rem 6rem;
+    font-size: var(--button--font--size);
+    color: white;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    transition: 600ms ease;
+}
+.landing--info input:hover{
+    background: var(--hoverColor);
+    cursor: pointer;
+} */
+
+@media (max-width: 1811px){
+
+    /*==============
+      ====header====
+      ==============*/
+    header div{
+        left: 5rem;
+    }
+
+    /*====================
+      ====landing view====
+      ====================*/
+    .section--landing img{
+        right: 10rem;
+    }
+    .landing--info{
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 1661px){
+    /*====================
+      ====landing view====
+      ====================*/
+    .section--landing img{
+        right: 7rem;
+        transform: scale(180%);
+    }
+}
+
+@media (max-width: 1551px){
+    /*==============
+      ====header====
+      ==============*/
+      header div{
+        left: 3rem;
+    }
+    /*====================
+      ====landing view====
+      ====================*/
+    .section--landing img{
+        right: 6rem;
+        transform: scale(170%);
+    }
+    .landing--info{
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 1487px){
+    /*==============
+      ====header====
+      ==============*/
+      header {
+        height: 5rem;
+    }
+      header div{
+        top: 4rem;
+        margin-right: 6rem;
+        right: 0rem;
+        float: right;
+    }
+    /*====================
+      ====landing view====
+      ====================*/
+    .section--landing img{
+        bottom: 0rem; 
+        transform: scale(170%);
+    }
+    .landing--info{
+        margin-left: 5rem;
+    }
+    .landing--info h1{
+        margin-top: 1rem;
+    }
+    .landing--info input:first-of-type{
+        margin-left: 0rem;
+    }
+    .landing--info input:last-of-type{
+        padding: 1.5rem 6.8rem 1.5rem 6.8rem;
+    }
+    .landing--info__btnArea{
+        width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .landing--info input{
+        margin-top: 6rem;
+        margin-left: 0rem;
+    }
+    .section--landing img{
+        right: 8rem;
+        bottom: -0.8rem;
+        transform: scale(140%);
+    }
+}
+
+@media (max-width: 1188px){
+    /*====================
+      ====landing view====
+      ====================*/
+    .landing--info{
+        margin-left: 1rem;
+    }
+    .landing--info input{
+        margin-top: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+@media (max-width: 948px){
+    header div{
+        top: 2rem;
+        
+    }
+    /*====================
+      ====landing view====
+      ====================*/
+    .section--landing img{
+        right: 5rem;
+        bottom: -0.8rem;
+        transform: scale(119%);
+    }
+    .landing--info h1{
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 835px){
+    /*====================
+      ====landing view====
+      ====================*/
+    .section--landing{
+        flex-direction: column;
+    }
+    .landing--info{
+        margin-left: 0rem;
+        width: 100%;
+    }
+    .landing--info__btnArea{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .landing--info h1,
+    .landing--info h3{
+        margin-left: 4rem;
+        margin-bottom: 0rem;
+    }
+    .landing--info input{
+        margin-right: 0;
+    }
+    .section--landing img{
+        position: static;
+        right: 0rem;
+        width: 20rem;
+        margin: 2rem auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 633px){
+    .landing--info__btnArea{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .landing--info h1,
+    .landing--info h3{
+        margin-left: 2rem;
+        
+    }
+    .section--landing img{
+        display: none;
+    }
+}
+
+@media (max-width: 452px){
+    .landing--info h1,
+    .landing--info h3{
+        margin-left: 0rem;
+        padding: 2%;
+    }
+    .landing--info h1{
+        text-align: center;
+    }
+    .landing--info h3{
+        text-align: center;
+    }
+    .landing--info{
+        margin-left: 0rem;
+    }
+}
